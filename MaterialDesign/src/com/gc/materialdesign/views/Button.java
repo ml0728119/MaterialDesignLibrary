@@ -13,6 +13,7 @@ import android.graphics.Bitmap.Config;
 import android.graphics.drawable.GradientDrawable;
 import android.graphics.drawable.LayerDrawable;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.widget.TextView;
 
@@ -24,7 +25,7 @@ public abstract class Button extends CustomView {
 	int minWidth;
 	int minHeight;
 	int background;
-	float rippleSpeed = 12f;
+	float rippleSpeed = Utils.dpToPx(5, getResources());;
 	int rippleSize = 3;
 	Integer rippleColor;
 	OnClickListener onClickListener;
@@ -158,6 +159,7 @@ public abstract class Button extends CustomView {
 
 	// Set color of background
 	public void setBackgroundColor(int color) {
+        Log.i("Tag", "setBackgroundColor    " + color);
 		this.backgroundColor = color;
 		if (isEnabled())
 			beforeBackground = backgroundColor;

@@ -20,7 +20,7 @@ public class ButtonIcon extends ButtonFloat {
 		} catch (NoSuchMethodError e) {
 			setBackgroundDrawable(new ColorDrawable(getResources().getColor(android.R.color.transparent)));
 		}
-		rippleSpeed = Utils.dpToPx(2, getResources());
+		rippleSpeed = Utils.dpToPx(3, getResources());
 		rippleSize = Utils.dpToPx(5, getResources());
 	}
 	

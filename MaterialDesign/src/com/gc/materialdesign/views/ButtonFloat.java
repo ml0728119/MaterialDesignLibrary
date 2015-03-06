@@ -59,7 +59,7 @@ public class ButtonFloat extends Button{
 	}
 	
 	protected void setDefaultProperties(){
-		rippleSpeed = Utils.dpToPx(2, getResources());
+		rippleSpeed = Utils.dpToPx(5, getResources());
 		rippleSize = Utils.dpToPx(5, getResources());
 		setMinimumWidth(Utils.dpToPx(sizeRadius*2, getResources()));
 		setMinimumHeight(Utils.dpToPx(sizeRadius*2, getResources()));

@@ -147,5 +147,28 @@
             android:layout_marginLeft="104dp"
             android:text="Widgets" />
     </com.gc.materialdesign.views.LayoutRipple>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="#fff"
+    android:textColor="#ff00ff"
+            android:text="Button21111" />
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="#ff4bff28"
+            android:text="3333" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        </LinearLayout>
 
 </LinearLayout>

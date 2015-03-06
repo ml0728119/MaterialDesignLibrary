@@ -117,4 +117,8 @@ public class ButtonFlat extends Button {
         	return textButton.getText().toString();
  	}
 
+
+    public void setTextColor(int color){
+        textButton.setTextColor(color);
+    }
 }

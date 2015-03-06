@@ -10,10 +10,12 @@ import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 
+import com.gc.materialdesign.utils.Utils;
+
 public class LayoutRipple extends CustomView {
 
 	int background;
-	float rippleSpeed = 10f;
+	float rippleSpeed = Utils.dpToPx(5, getResources());
 	int rippleSize = 3;
 
 	OnClickListener onClickListener;
